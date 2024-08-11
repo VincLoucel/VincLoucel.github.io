@@ -1,51 +1,143 @@
+/* Base styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-nav ul {
-    list-style-type: none;
+ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 0.8em;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    font-size: 0.9em;
 }
 
-main {
-    padding: 20px;
+/* Hero section */
+.hero {
+    text-align: left;
+    padding: 50px 20px;
 }
 
-article {
+.hero h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-article img {
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Introduction section */
+.intro {
+    padding: 20px;
+}
+
+.intro h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 75%;
+}
+
+/* Blog section */
+.blog {
+    padding: 20px;
+}
+
+.blog h2 {
+    font-weight: 600;
+}
+
+.blog p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.blog-links {
+    display: flex;
+    gap: 20px;
+}
+
+.blog-links a img {
     max-width: 100%;
     height: auto;
 }
 
+/* Experiences section */
+.experiences {
+    padding: 20px;
+}
+
+.experiences h2 {
+    font-weight: 600;
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio-links a img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer styling */
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
     width: 100%;
-    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left a, .footer-right a {
+    color: #fff;
+}
+
+.footer-center {
+    text-align: center;
 }
