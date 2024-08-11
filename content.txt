@@ -1,0 +1,54 @@
+
+Toute la police doit etre par defaut en Montserrat
+Pour la page d'accueil
+
+--Tout en haut à gauche, taille relativement petite
+Vincent Loucel
+
+-- Tout en haut à droite
+Lien pour accèder au blog
+Lien pour accèder au portfolio
+Lien pour accèder au contact
+
+--En dessous, en gros titre, aligné à gauche 
+Analytics Engineer Expert
+
+--En dessous, une image
+Image
+
+-- En dessous, titre, en gras
+Unleash the power of your data
+
+--En dessous, aligné à gauche, police d'écriture moyenne, le texte revient a la ligne au 3 quart de la page
+
+With 6 years of experience in the data field and extensive knowledge across various business domains, 
+I can support your Data needs. Whether it’s data ingestion, modeling, or visualization, 
+I can help you leverage your data to maximize business benefits. Working in some of the best Tech Company in France (ManoMano, Doctolib) 
+helped me develop my knowledge of how to make the best usage of the data.
+With expertise in powerful tools such as DBT, Snowflake, Redshift, and Tableau, I can provide consulting, strengthen your teams, or train them on the fundamentals 
+and best practices for effective and impactful data use.
+
+-- En dessous, titre
+blog
+
+-- En dessous, texte taille moyenne/petite
+I've shared below some blog articles that could provide some insights and help concerning data issue you could have. 
+Don't hesitate to contact me if you want to know more !
+
+-- En dessous, en Lien
+Deux images, chacune redirigeant vers un des articles du blog 
+
+-- En dessous, titre
+My experiences
+
+-- En dessous, lien
+3 images, chacune redirigeant vers une experience de la page portfolio
+
+-- En dessous, centré
+Vincent Loucel
+
+-- En dessous, à gauche, lien
+Lien vers la page de contact
+
+-- Même hauteur que ci dessus, à droite, lien vers profil linkedin
+Linkedin

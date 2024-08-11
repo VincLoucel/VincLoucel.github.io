@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Vincent Loucel</title>
+    <title>Vincent Loucel - Analytics Engineer Expert</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon site</h1>
+        <div class="logo">
+            Vincent Loucel
+        </div>
         <nav>
             <ul>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Présentation</h2>
-            <p>Ceci est ma page d'accueil où je partage mes expériences et articles de blog.</p>
+        <section class="hero">
+            <h1>Analytics Engineer Expert</h1>
+            <img src="images\index\index_image.png" alt="Image related to Analytics Engineering">
+        </section>
+        <section class="intro">
+            <h2>Unleash the power of your data</h2>
+            <p>
+                With 6 years of experience in the data field and extensive knowledge across various business domains, 
+                I can support your Data needs. Whether it’s data ingestion, modeling, or visualization, 
+                I can help you leverage your data to maximize business benefits. Working in some of the best Tech Company in France (ManoMano, Doctolib) 
+                helped me develop my knowledge of how to make the best usage of the data.
+                With expertise in powerful tools such as DBT, Snowflake, Redshift, and Tableau, I can provide consulting, strengthen your teams, or train them on the fundamentals 
+                and best practices for effective and impactful data use.
+            </p>
+        </section>
+        <section class="blog">
+            <h2>Blog</h2>
+            <p>I've shared below some blog articles that could provide some insights and help concerning data issue you could have. Don't hesitate to contact me if you want to know more!</p>
+            <div class="blog-links">
+                <a href="blog/improve_data_viz.html"><img src="images/blog/improve_data_viz.jpg" alt="Blog article 1"></a>
+                <a href="blog/modern_data_stack.html"><img src="images/blog/modern_data_stack.png" alt="Blog article 2"></a>
+            </div>
+        </section>
+        <section class="experiences">
+            <h2>My experiences</h2>
+            <div class="portfolio-links">
+                <a href="portfolio.html"><img src="images/experience/doctolib.png" alt="Doctolib"></a>
+                <a href="portfolio.html"><img src="images/experience/manomano.png" alt="Mano Mano"></a>
+                <a href="portfolio.html"><img src="images/experience/kisio.png" alt="Kisio"></a>
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2024 Vincent Loucel</p>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-center">
+                Vincent Loucel
+            </div>
+            <div class="footer-right">
+                <a href="https://www.linkedin.com/in/vincent-loucel-799aa9130/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
