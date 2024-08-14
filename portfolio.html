@@ -1,33 +1,75 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Vincent Loucel</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section>
-            <h2>Mes Expériences</h2>
-            <p>Ceci est la liste de mes expériences professionnelles...</p>
-            <ul>
-                <li><strong>Poste 1</strong> - Description du poste 1</li>
-                <li><strong>Poste 2</strong> - Description du poste 2</li>
-            </ul>
+        <section class="portfolio-header">
+            <h1>My experiences</h1>
+            <p>Here you can find more about my previous missions and experiences. If you have any questions, don't hesitate to contact me!</p>
+        </section>
+        <section class="portfolio-gallery">
+            <!-- Doctolib Experience -->
+            <div class="portfolio-item">
+                <img src="images/experience/doctolib.png" alt="Doctolib Experience">
+                <div class="portfolio-info">
+                    <h2>Analytics Engineer - Feb 2022 to 2024 - Doctolib</h2>
+                    <p>
+                        Doctolib is one of the most prestigious French tech companies specializing in the medical field. During my time at Doctolib, I worked extensively in the Sales & Finance domain. This allowed me to deepen my industry knowledge in three key areas. Below is a non-exhaustive list of missions I accomplished during my experience:
+                        <ul>
+                            <li>Revamping the finance datamart based on the Zuora tool, from data ingestion via Airflow/Zuora API to table modeling for the reporting and analysis needs of the Executive Committee. Acted as the technical reference for the team on Datamart Finance and Zuora.</li>
+                            <li>DBT Migration: Implemented and tested best practices with other data teams, migrated part of the existing DTMs. Acted as the DBT reference.</li>
+                            <li>Client KPI Project: Modeled tables and created a Tableau dashboard to provide, for the first time, a clear view of Doctolib's clients and the KPIs (like NRR) associated with the MRR these clients generate.</li>
+                            <li>Debt Collection Project: Modeled Zuora data to calculate the existing debt for each Doctolib client.</li>
+                            <li>Recruitment for various open positions of Analytics Engineer, from Junior to Staff levels. Assisted in project management for less experienced profiles.</li>
+                            <li>Technical and operational tasks</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- ManoMano Experience -->
+            <div class="portfolio-item">
+                <img src="images/experience/manomano.png" alt="ManoMano Experience">
+                <div class="portfolio-info">
+                    <h2>Bi Engineer - Oct 2020 to Feb 2022 - ManoMano</h2>
+                    <p>
+                        ManoMano is a french company specialised in E-commerce. It is the biggest handiwork marketplace online, and is one successful Tech Scale up in France. During my time there, I had the opportunity to accomplish different missions:
+                        <ul>
+                            <li>Understanding data needs related to e-commerce platforms (customers, vendors, products, promotions, etc.) in the context of a scale-up.</li>
+                            <li>Comprehending a massive data warehouse (Snowflake) to analyze and effectively present data for business needs.</li>
+                            <li>Managing BI projects from requirements gathering to user training. Implementing data models to meet business needs via dashboards in Tableau and Qlik.</li>
+                            <li>Creating data marts in collaboration with other data teams (notably Data Engineering and Data Governance).</li>
+                            <li>Training users on Qlik and Tableau tools. Providing training for ManoMano collaborators on the basics and good practices of SQL language.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kisio Experience -->
+            <div class="portfolio-item">
+                <img src="images/experience/kisio.png" alt="Kisio Experience">
+                <div class="portfolio-info">
+                    <h2>Data Analytics Specialist - Dec 2018 to Oct 2020 - Kisio (now Patterns)</h2>
+                    <p>
+                        Kisio is a subsidiary of the Keolis Group, a French transportation company operating public transport systems worldwide. To gain a better understanding of user movements and provide a clearer vision of mobility across regions, Kisio established a Data team to address these issues. During my time with them, I was able to accomplish the following missions:
+                        <ul>
+                            <li>Conducting analyses, processing, visualizations, and ensuring the quality of large quantities of GPS and other types of data. This included studying the impact of Covid-19 on French mobility patterns (Kisio and Roland Berger study on Covid-19 and a study for the DGITM) and analyzing mobility on several RER lines (B and D) to forecast the impact of construction work.</li>
+                            <li>Performing analyses and data mining of massive mobile trace data to better understand mobility in the Grand Est region and producing data visualizations in Tableau.</li>
+                            <li>Analyzing travel times at Saint-Lazare station following the implementation of Automated Fare Collection (CAB) by studying Wi-Fi data (via DotPulse).</li>
+                            <li>Serving as the Technical Data Lead for GPS trace studies conducted in partnership with Moovit.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>© 2024 Vincent Loucel</p>
-    </footer>
+
+    <script src="scripts/portfolio.js"></script>
 </body>
 </html>

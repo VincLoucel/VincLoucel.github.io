@@ -1,0 +1,66 @@
+Toute la police doit etre par defaut en Montserrat
+
+Pour le portfolio, la page doit se composer de trois images
+Lorsque l'on clique sur ces images, il faudrait qu'un texte apparaisse alors décrivant l'experience
+
+-- Titre, gras, centré
+My experiences
+
+-- En dessous, gos, centré
+Here you can find more about my previous missions and experiences. If you have any questions, don't hesitate to contact me !
+
+--En dessous, centré, image, lorsqu'on clique un texte apparait
+-- centré, titre
+
+Analytics Engineer - Feb 2022 to 2024 - Doctolib
+
+-- en dessous, texte normal
+Doctolib is one of the most prestigious French tech companies specializing in the medical field. During my time at Doctolib, I worked extensively in the Sales & Finance domain. This allowed me to deepen my industry knowledge in three key areas. Below is a non-exhaustive list of missions I accomplished during my experience:
+
+- Revamping the finance datamart based on the Zuora tool, from data ingestion via Airflow/Zuora API to table modeling for the reporting and analysis needs of the Executive Committee. Acted as the technical reference for the team on Datamart Finance and Zuora.
+
+- DBT Migration: Implemented and tested best practices with other data teams, migrated part of the existing DTMs. Acted as the DBT reference.
+
+- Client KPI Project: Modeled tables and created a Tableau dashboard to provide, for the first time, a clear view of Doctolib's clients and the KPIs (like NRR) associated with the MRR these clients generate.
+
+- Debt Collection Project: Modeled Zuora data to calculate the existing debt for each Doctolib client.
+
+- Recruitment for various open positions of Analytics Engineer, from Junior to Staff levels. Assisted in project management for less experienced profiles.
+
+- Technical and operational tasks
+
+--En dessous, centré, image, lorsqu'on clique un texte apparait
+-- centré, titre
+
+Bi Engineer - Oct 2020 to Feb 2022 - ManoMano
+
+-- en dessous, texte normal
+
+ManoMano is a french company specialised in E-commerce. It is the biggest handiwork marketplace online, and is one successful Tech Scale up in France. During my time there, I had the opportunity to accomplish different missions:
+
+- Understanding data needs related to e-commerce platforms (customers, vendors, products, promotions, etc.) in the context of a scale-up.
+
+- Comprehending a massive data warehouse (Snowflake) to analyze and effectively present data for business needs.
+
+- Managing BI projects from requirements gathering to user training. Implementing data models to meet business needs via dashboards in Tableau and Qlik.
+
+- Creating data marts in collaboration with other data teams (notably Data Engineering and Data Governance).
+
+- Training users on Qlik and Tableau tools. Providing training for ManoMano collaborators on the basics and good practices of SQL language.
+
+--En dessous, centré, image, lorsqu'on clique un texte apparait
+-- centré, titre
+
+Data Analytics Specialist - Dec 2018 to Oct 2020 - Kisio (now Patterns)
+
+-- en dessous, texte normal
+
+Kisio is a subsidiary of the Keolis Group, a French transportation company operating public transport systems worldwide. To gain a better understanding of user movements and provide a clearer vision of mobility across regions, Kisio established a Data team to address these issues. During my time with them, I was able to accomplish the following missions:
+
+- Conducting analyses, processing, visualizations, and ensuring the quality of large quantities of GPS and other types of data. This included studying the impact of Covid-19 on French mobility patterns (Kisio and Roland Berger study on Covid-19 and a study for the DGITM) and analyzing mobility on several RER lines (B and D) to forecast the impact of construction work.
+
+- Performing analyses and data mining of massive mobile trace data to better understand mobility in the Grand Est region and producing data visualizations in Tableau.
+
+- Analyzing travel times at Saint-Lazare station following the implementation of Automated Fare Collection (CAB) by studying Wi-Fi data (via DotPulse).
+
+- Serving as the Technical Data Lead for GPS trace studies conducted in partnership with Moovit.
