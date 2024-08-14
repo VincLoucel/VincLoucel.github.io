@@ -6,30 +6,52 @@ body {
     background-color: #f4f4f4;
 }
 
-h1, h2 {
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
     font-weight: 600;
 }
 
-h1 {
-    text-align: center;
-    margin: 20px 0;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-p {
-    font-size: 1em;
-    line-height: 1.5em;
+/* Spacing for content below the fixed header */
+.main-content {
+    padding-top: 100px; /* Adjust this if header height changes */
 }
 
-ul {
-    padding-left: 20px;
-    list-style-type: disc;
+/* Home Page Styles */
+.home-header {
+    /* Styles spécifiques à l'en-tête de la page d'accueil */
 }
 
-main {
-    padding: 20px;
+.home-content {
+    /* Styles spécifiques au contenu de la page d'accueil */
 }
 
-/* Portfolio header */
+/* Portfolio Page Styles */
 .portfolio-header {
     text-align: center;
     margin-bottom: 40px;
@@ -41,7 +63,6 @@ main {
     margin: 0 auto;
 }
 
-/* Portfolio gallery */
 .portfolio-gallery {
     display: flex;
     flex-direction: column;
@@ -78,7 +99,6 @@ main {
     margin-top: 0;
 }
 
-/* Active state for showing the text */
 .portfolio-item.active img {
     opacity: 0.3;
 }
