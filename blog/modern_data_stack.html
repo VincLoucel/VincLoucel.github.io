@@ -5,225 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Modern Data Stack</title>
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0 15%;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .author-date {
-            font-size: 0.9rem;
-            text-align: center;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .author-date span {
-            font-weight: bold;
-        }
-
-        .author-date .article-length {
-            margin-left: 15px;
-        }
-
-        h2 {
-            font-size: 1.75rem;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        p strong {
-            font-weight: bold;
-        }
-
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #ccc;
-            margin: 20px 0;
-            padding-left: 10px;
-        }
-
-        img {
-            max-width: 48%;
-            margin-right: 2%;
-        }
-
-        .image-wrapper {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        .footer img {
-            width: 24px;
-            margin-right: 10px;
-        }
-
-        .footer .likes,
-        .footer .views {
-            margin-right: 20px;
-        }
-
-        .related-articles {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .related-articles img {
-            width: 200px;
-            height: auto;
-        }
-
-        .related-articles a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                margin: 0 5%;
-            }
-
-            img {
-                max-width: 100%;
-                margin-bottom: 20px;
-                margin-right: 0;
-            }
-
-            .image-wrapper {
-                flex-direction: column;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-        <h1>The Modern Data Stack</h1>
-        <div class="author-date">
-            <span>Vincent Loucel</span> - July 17 <span class="article-length"> - 6 min read</span>
+        <div class="logo">
+            Vincent Loucel
         </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <p>In today's world, changes happen faster and faster. We see it in our daily lives, with all the AI talks, the newest smartphones, and more. The data world is no exception to this phenomenon. In recent years, new data tools and improvements to existing ones have made the life of data users easier.</p>
+    <main>
+        <div class="article-content">
+            <div class="article-header">
+                <h1>The Modern Data Stack</h1>
+                <div class="article-author">Vincent Loucel</div>
+                <div class="article-meta">July 17 - 6 min read</div>
+            </div>
 
-    <h2>What is a Data Stack?</h2>
-    <p>A tech stack is a combination of programming languages, frameworks, libraries, tools, and technologies used to develop and deploy a software application or system.</p>
-    <p>For data, it's the combination of tools used to ingest, organize, store, transform, and visualize data. A stack can range from super simple (technically, a simple Postgres database could be a data stack) to more complex ones with many tools and languages.</p>
-    <p>Today, many great tools provide a lot of cool features, allowing us to have a scalable, maintainable, and governed data stack. However, it can also have its drawbacks.</p>
+            <p>In today's world, changes happen faster and faster. We see it in our daily lives, with all the AI talks, the newest smartphones, and more. The data world is no exception to this phenomenon. In recent years, new data tools and improvements to existing ones have made the life of data users easier.</p>
 
-    <h2>The Modern Data Stack</h2>
-    <p>What differentiates a modern data stack from what we could call a legacy data stack?</p>
+            <h2>What is a Data Stack?</h2>
+            <p>A tech stack is a combination of programming languages, frameworks, libraries, tools, and technologies used to develop and deploy a software application or system.</p>
+            <p>For data, it's the combination of tools used to ingest, organize, store, transform, and visualize data. A stack can range from super simple (technically, a simple Postgres database could be a data stack) to more complex ones with many tools and languages.</p>
+            <p>Today, many great tools provide a lot of cool features, allowing us to have a scalable, maintainable, and governed data stack. However, it can also have its drawbacks.</p>
 
-    <h3>Flexibility and Accessibility</h3>
-    <p>Let's first talk a little bit about infrastructure installation. Some years ago, we had many data warehouses hosted on on-premises databases. These databases were sometimes a pain to install and maintain. Furthermore, with more and more data used every day, the storage needs are growing exponentially, and performance can suffer.</p>
-    <p>With cloud-based databases, everything is easier. Generally, the installation of a database is faster and simpler. You gain more flexibility because you can easily scale your storage capacity and computation power, meaning you can handle larger volumes of data more quickly. It's not only the database that has become cloud-based: solutions to visualize and transform data have too. For instance, Tableau Server allows you to create and share your dashboards in the cloud with your organization, and DBT Cloud enables you to transform your data in the cloud.</p>
-    <p>Another way to gain flexibility is that each step of the data journey in a modern data stack is handled by a specialized tool (e.g., DBT for transformation, Airbyte for ingestion, Tableau for visualization), which are easily connected to the other tools in the chain. This means you're no longer locked into a monolithic ecosystem like Talend but have the freedom to test and choose from many diverse tools.</p>
-    <p>However, this flexibility comes with a potential cost. Integrating multiple tools can become expensive, and managing these tools can require additional overhead and expertise.</p>
+            <h2>The Modern Data Stack</h2>
+            <p>What differentiates a modern data stack from what we could call a legacy data stack?</p>
 
-    <h3>User-Friendly for Non-Tech and Business People</h3>
-    <p>Modern data stacks have become increasingly user-friendly, making it easier for non-technical and business users to interact with data. Tools like Looker and Tableau have intuitive interfaces that allow users to create reports and dashboards without needing to write complex code. This democratization of data enables faster decision-making and empowers more team members to engage with data.</p>
-    <p>However, without good practices and governance, this ease of use can lead to maintenance challenges. Without proper documentation and standardization, dashboards and reports can become inconsistent, making it difficult to ensure data quality and reliability. Implementing best practices for documentation, version control, and review processes is essential to maintain the integrity of the data.</p>
-    <p>Moreover, training and support are crucial to help non-technical users fully leverage these tools. Offering workshops, creating comprehensive guides, and maintaining a support channel can significantly improve the adoption and effective use of the modern data stack.</p>
+            <h3>Flexibility and Accessibility</h3>
+            <p>Let's first talk a little bit about infrastructure installation. Some years ago, we had many data warehouses hosted on on-premises databases. These databases were sometimes a pain to install and maintain. Furthermore, with more and more data used every day, the storage needs are growing exponentially, and performance can suffer.</p>
+            <p>With cloud-based databases, everything is easier. Generally, the installation of a database is faster and simpler. You gain more flexibility because you can easily scale your storage capacity and computation power, meaning you can handle larger volumes of data more quickly. It's not only the database that has become cloud-based: solutions to visualize and transform data have too. For instance, Tableau Server allows you to create and share your dashboards in the cloud with your organization, and DBT Cloud enables you to transform your data in the cloud.</p>
+            <p>Another way to gain flexibility is that each step of the data journey in a modern data stack is handled by a specialized tool (e.g., DBT for transformation, Airbyte for ingestion, Tableau for visualization), which are easily connected to the other tools in the chain. This means you're no longer locked into a monolithic ecosystem like Talend but have the freedom to test and choose from many diverse tools.</p>
+            <p>However, this flexibility comes with a potential cost. Integrating multiple tools can become expensive, and managing these tools can require additional overhead and expertise.</p>
 
-    <h3>SQL Usage for Data Transformation and Quality</h3>
-    <p>One of the key aspects of the modern data stack is the widespread use of SQL for data transformation. Tools like DBT (data build tool) allow analysts to write SQL queries to transform raw data into a more usable format. This approach leverages the familiarity and power of SQL, making it accessible to a broad range of users.</p>
-    <p>Additionally, modern tools include robust testing frameworks to ensure data quality. For instance, DBT allows you to write tests that validate your data transformations, helping to catch errors early in the process. These tests can check for null values, ensure referential integrity, and validate business logic, ensuring that the transformed data meets the required standards.</p>
-    <p>Furthermore, data observability platforms like Monte Carlo and Databand provide continuous monitoring and alerting, helping teams quickly identify and resolve data quality issues. This proactive approach ensures that any anomalies or discrepancies in the data are addressed before they impact business decisions.</p>
+            <h3>User-Friendly for Non-Tech and Business People</h3>
+            <p>Modern data stacks have become increasingly user-friendly, making it easier for non-technical and business users to interact with data. Tools like Looker and Tableau have intuitive interfaces that allow users to create reports and dashboards without needing to write complex code. This democratization of data enables faster decision-making and empowers more team members to engage with data.</p>
+            <p>However, without good practices and governance, this ease of use can lead to maintenance challenges. Without proper documentation and standardization, dashboards and reports can become inconsistent, making it difficult to ensure data quality and reliability. Implementing best practices for documentation, version control, and review processes is essential to maintain the integrity of the data.</p>
+            <p>Moreover, training and support are crucial to help non-technical users fully leverage these tools. Offering workshops, creating comprehensive guides, and maintaining a support channel can significantly improve the adoption and effective use of the modern data stack.</p>
 
-    <h3>Data Governance</h3>
-    <p>Data governance is crucial in a modern data stack. As organizations handle increasing volumes of data, ensuring that data is accurate, secure, and accessible to the right people becomes paramount. Tools like Alation and Castor provide data cataloging, lineage tracking, and governance features that help organizations manage their data assets effectively. These tools offer a centralized repository where data definitions, usage, and ownership are documented, ensuring that everyone in the organization has a clear understanding of the data.</p>
-    <p>Effective data governance also involves implementing policies and procedures to protect sensitive data and ensure compliance with regulations like GDPR and CCPA. Role-based access control (RBAC) and data masking techniques can help protect data privacy and security.</p>
-    <p>Moreover, fostering a data-driven culture where data stewardship and accountability are emphasized can significantly enhance data governance. Regular audits, training programs, and clear communication channels are essential to maintaining robust data governance practices.</p>
+            <h3>SQL Usage for Data Transformation and Quality</h3>
+            <p>One of the key aspects of the modern data stack is the widespread use of SQL for data transformation. Tools like DBT (data build tool) allow analysts to write SQL queries to transform raw data into a more usable format. This approach leverages the familiarity and power of SQL, making it accessible to a broad range of users.</p>
+            <p>Additionally, modern tools include robust testing frameworks to ensure data quality. For instance, DBT allows you to write tests that validate your data transformations, helping to catch errors early in the process. These tests can check for null values, ensure referential integrity, and validate business logic, ensuring that the transformed data meets the required standards.</p>
+            <p>Furthermore, data observability platforms like Monte Carlo and Databand provide continuous monitoring and alerting, helping teams quickly identify and resolve data quality issues. This proactive approach ensures that any anomalies or discrepancies in the data are addressed before they impact business decisions.</p>
 
-    <h3>The Future: AI and the Modern Data Stack</h3>
-    <p>AI is making the modern data stack even more relevant. Almost all data and tech companies are integrating AI into their tools, enhancing capabilities across the board.</p>
+            <h3>Data Governance</h3>
+            <p>Data governance is crucial in a modern data stack. As organizations handle increasing volumes of data, ensuring that data is accurate, secure, and accessible to the right people becomes paramount. Tools like Alation and Castor provide data cataloging, lineage tracking, and governance features that help organizations manage their data assets effectively. These tools offer a centralized repository where data definitions, usage, and ownership are documented, ensuring that everyone in the organization has a clear understanding of the data.</p>
+            <p>Effective data governance also involves implementing policies and procedures to protect sensitive data and ensure compliance with regulations like GDPR and CCPA. Role-based access control (RBAC) and data masking techniques can help protect data privacy and security.</p>
+            <p>Moreover, fostering a data-driven culture where data stewardship and accountability are emphasized can significantly enhance data governance. Regular audits, training programs, and clear communication channels are essential to maintaining robust data governance practices.</p>
 
-    <h3>AI in Data Visualization</h3>
-    <p>AI can automate the creation of dashboards and reports, identifying trends and anomalies that might be missed by human analysts. Tools like ThoughtSpot leverage AI to provide natural language querying and automated insights, making data exploration more intuitive. AI-powered visualizations can dynamically adjust based on user queries, providing more relevant and actionable insights.</p>
-    <p>Moreover, predictive analytics and machine learning models can be integrated into data visualization platforms, offering advanced forecasting and trend analysis. This enables businesses to make data-driven decisions with a forward-looking perspective, identifying potential opportunities and risks.</p>
+            <h3>The Future: AI and the Modern Data Stack</h3>
+            <p>AI is making the modern data stack even more relevant. Almost all data and tech companies are integrating AI into their tools, enhancing capabilities across the board.</p>
 
-    <h3>AI to Help You Code</h3>
-    <p>AI-driven code generation tools can assist in writing SQL queries and data transformation scripts. For example, GitHub Copilot and other AI coding assistants can suggest code snippets, detect errors, and optimize performance, accelerating the development process and reducing the learning curve for new users. These tools can also provide recommendations for best practices, helping maintain code quality and consistency.</p>
-    <p>AI can also facilitate data integration by automating the extraction, transformation, and loading (ETL) processes. Intelligent data mapping and schema matching can significantly reduce the time and effort required to integrate new data sources, enabling faster data onboarding and reducing manual errors.</p>
+            <h3>AI in Data Visualization</h3>
+            <p>AI can automate the creation of dashboards and reports, identifying trends and anomalies that might be missed by human analysts. Tools like ThoughtSpot leverage AI to provide natural language querying and automated insights, making data exploration more intuitive. AI-powered visualizations can dynamically adjust based on user queries, providing more relevant and actionable insights.</p>
+            <p>Moreover, predictive analytics and machine learning models can be integrated into data visualization platforms, offering advanced forecasting and trend analysis. This enables businesses to make data-driven decisions with a forward-looking perspective, identifying potential opportunities and risks.</p>
 
-    <h2>Additional Topics to Consider</h2>
+            <h3>AI to Help You Code</h3>
+            <p>AI-driven code generation tools can assist in writing SQL queries and data transformation scripts. For example, GitHub Copilot and other AI coding assistants can suggest code snippets, detect errors, and optimize performance, accelerating the development process and reducing the learning curve for new users. These tools can also provide recommendations for best practices, helping maintain code quality and consistency.</p>
+            <p>AI can also facilitate data integration by automating the extraction, transformation, and loading (ETL) processes. Intelligent data mapping and schema matching can significantly reduce the time and effort required to integrate new data sources, enabling faster data onboarding and reducing manual errors.</p>
 
-    <h3>Data Integration and Interoperability</h3>
-    <p>In a modern data stack, seamless data integration and interoperability are essential. Tools like Fivetran and Stitch automate the ETL processes, ensuring that data from various sources can be easily integrated into the central data warehouse. APIs and data connectors facilitate the smooth exchange of data between different tools, enhancing the overall efficiency of the data stack.</p>
+            <h2>Additional Topics to Consider</h2>
 
-    <h3>Real-Time Data Processing</h3>
-    <p>With the growing need for real-time insights, modern data stacks are increasingly incorporating real-time data processing capabilities. Tools like Apache Kafka and AWS Kinesis enable the ingestion and processing of streaming data, allowing businesses to react to events as they happen. This real-time processing capability is crucial for applications like fraud detection, supply chain optimization, and personalized customer experiences.</p>
+            <h3>Data Integration and Interoperability</h3>
+            <p>In a modern data stack, seamless data integration and interoperability are essential. Tools like Fivetran and Stitch automate the ETL processes, ensuring that data from various sources can be easily integrated into the central data warehouse. APIs and data connectors facilitate the smooth exchange of data between different tools, enhancing the overall efficiency of the data stack.</p>
 
-    <h3>Scalability and Performance Optimization</h3>
-    <p>Scalability is a key advantage of the modern data stack. Cloud-based solutions offer elastic scaling, allowing organizations to handle varying workloads without compromising performance. Techniques like data partitioning, indexing, and query optimization are employed to ensure that the data stack can efficiently manage large volumes of data and complex queries.</p>
+            <h3>Real-Time Data Processing</h3>
+            <p>With the growing need for real-time insights, modern data stacks are increasingly incorporating real-time data processing capabilities. Tools like Apache Kafka and AWS Kinesis enable the ingestion and processing of streaming data, allowing businesses to react to events as they happen. This real-time processing capability is crucial for applications like fraud detection, supply chain optimization, and personalized customer experiences.</p>
 
-    <h3>Cost Management and Optimization</h3>
-    <p>While the modern data stack offers numerous benefits, cost management is a critical consideration. Cloud services and specialized tools can become expensive, especially as data volumes grow. Implementing cost optimization strategies, such as reserved instances, right-sizing, and monitoring usage, can help manage and reduce expenses. Many cloud providers offer cost management tools that provide insights into spending patterns and recommendations for cost savings.</p>
+            <h3>Scalability and Performance Optimization</h3>
+            <p>Scalability is a key advantage of the modern data stack. Cloud-based solutions offer elastic scaling, allowing organizations to handle varying workloads without compromising performance. Techniques like data partitioning, indexing, and query optimization are employed to ensure that the data stack can efficiently manage large volumes of data and complex queries.</p>
 
-    <h2 class="final-thoughts">Final thoughts</h2>
-    <p>The evolution of the modern data stack is a testament to the rapid advancements in technology and the growing importance of data in decision-making. By embracing the modern data stack, organizations can harness the full potential of their data, driving innovation and achieving competitive advantages. As AI and other emerging technologies continue to integrate into the data ecosystem, the capabilities and possibilities of the modern data stack will only expand further.</p>
-    <p>If you have any questions, don't hesitate to contact me :)</p>
+            <h3>Cost Management and Optimization</h3>
+            <p>While the modern data stack offers numerous benefits, cost management is a critical consideration. Cloud services and specialized tools can become expensive, especially as data volumes grow. Implementing cost optimization strategies, such as reserved instances, right-sizing, and monitoring usage, can help manage and reduce expenses. Many cloud providers offer cost management tools that provide insights into spending patterns and recommendations for cost savings.</p>
 
-    <div class="footer">
-        <span>Vincent Loucel</span> - July 17 
-        <br><br>
-        <img src="../images/like_icon.png" alt="Like" class="likes"> 
-        <img src="../images/view_icon.png" alt="Views" class="views">
-    </div>
+            <h2 class="final-thoughts">Final thoughts</h2>
+            <p>The evolution of the modern data stack is a testament to the rapid advancements in technology and the growing importance of data in decision-making. By embracing the modern data stack, organizations can harness the full potential of their data, driving innovation and achieving competitive advantages. As AI and other emerging technologies continue to integrate into the data ecosystem, the capabilities and possibilities of the modern data stack will only expand further.</p>
+            <p>If you have any questions, don't hesitate to contact me :)</p>
 
-    <div class="related-articles">
-        <h2>Read more from my blog:</h2>
-        <img src="../images/blog_placeholder.png" alt="Another article">
-        <a href="another_article.html">Another article</a>
-    </div>
+            <div class="article-navigation">
+                <a href="improve_data_viz.html">
+                    <img src="../images/blog/improve_data_viz.jpeg" alt="Next Article Thumbnail">
+                    <span>Improve Your Data Viz</span>
+                </a>
+                <div class="next-post">
+                    <a href="../index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24px" height="24px">
+                            <path d="M32 3.313L3 27.823v33.864h19.813V41.176H41.18v20.51H61V27.823L32 3.313zM24.375 55.052V40.43h15.25v14.622H24.375zm33.25-22.197H48.44V55.052H38.064V40.43H25.94v14.622H15.565V32.855H6.375L32 13.553 57.625 32.855H57.625z"/>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    <footer>
+        <div class="footer-center">
+            Vincent Loucel
+        </div>
+    </footer>
 </body>
+
 </html>
