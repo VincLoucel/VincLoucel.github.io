@@ -5,207 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to improve your Data visualizations</title>
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0 15%;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .author-date {
-            font-size: 0.9rem;
-            text-align: center;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .author-date span {
-            font-weight: bold;
-        }
-
-        .author-date .article-length {
-            margin-left: 15px;
-        }
-
-        h2 {
-            font-size: 1.75rem;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        p strong {
-            font-weight: bold;
-        }
-
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #ccc;
-            margin: 20px 0;
-            padding-left: 10px;
-        }
-
-        img {
-            max-width: 48%;
-            margin-right: 2%;
-        }
-
-        .image-wrapper {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        .footer img {
-            width: 24px;
-            margin-right: 10px;
-        }
-
-        .footer .likes,
-        .footer .views {
-            margin-right: 20px;
-        }
-
-        .related-articles {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .related-articles img {
-            width: 200px;
-            height: auto;
-        }
-
-        .related-articles a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                margin: 0 5%;
-            }
-
-            img {
-                max-width: 100%;
-                margin-bottom: 20px;
-                margin-right: 0;
-            }
-
-            .image-wrapper {
-                flex-direction: column;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-        <h1>How to improve your Data visualizations</h1>
-        <div class="author-date">
-            <span>Vincent Loucel</span> - July 4 <span class="article-length"> - 5 min read</span>
+        <div class="logo">
+            Vincent Loucel
         </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <p>Today, wherever there is a business, there is data behind it. Understanding this data can be a daunting task, especially for those who are not well-versed in data analysis. This is where <strong>data visualization</strong> comes into play.</p>
+    <main>
+        <div class="article-content">
+            <div class="article-header">
+                <h1>How to improve your Data visualizations</h1>
+                <div class="article-author">Vincent Loucel</div>
+                <div class="article-meta">July 4 - 5 min read</div>
+            </div>
 
-    <h2>What is Data Visualization?</h2>
-    <blockquote>“A picture is worth a thousand words.” - Confucius</blockquote>
-    <p>This adage captures the essence of data visualization. Data visualization is the transformation of information into a visual format, such as a bar chart, pie chart, or color-coded sequence of numbers. Its purpose is to allow humans to quickly grasp the main information being communicated, bypassing the need for tedious sentences or large Excel tables. A good data visualization addresses a <strong>business problem</strong> almost instantly.</p>
+            <p>Today, wherever there is a business, there is data behind it. Understanding this data can be a daunting task, especially for those who are not well-versed in data analysis. This is where <strong>data visualization</strong> comes into play.</p>
 
-    <h2>A Quick Example:</h2>
-    <p>Imagine you run a sales company and you want to know if this month's sales have improved compared to the previous month or the same month last year. What’s the simplest way to get this information? Should you sift through your spreadsheet, or simply look at a timeline graph of your monthly sales? Below is an example of a table and its corresponding graph:</p>
+            <h2>What is Data Visualization?</h2>
+            <blockquote>“A picture is worth a thousand words.” - Confucius</blockquote>
+            <p>This adage captures the essence of data visualization. Data visualization is the transformation of information into a visual format, such as a bar chart, pie chart, or color-coded sequence of numbers. Its purpose is to allow humans to quickly grasp the main information being communicated, bypassing the need for tedious sentences or large Excel tables. A good data visualization addresses a <strong>business problem</strong> almost instantly.</p>
 
-    <div class="image-wrapper">
-        <img src="../images/blog/improve_dataviz_1.png" alt="Data Table">
-        <img src="../images/blog/image_deux_dataviz.png" alt="Sales Graph">
-    </div>
+            <h2>A Quick Example:</h2>
+            <p>Imagine you run a sales company and you want to know if this month's sales have improved compared to the previous month or the same month last year. What’s the simplest way to get this information? Should you sift through your spreadsheet, or simply look at a timeline graph of your monthly sales? Below is an example of a table and its corresponding graph:</p>
 
-    <p>Which method helps you understand the trend more quickly? The graph likely gives you a more immediate and clear understanding of your sales performance. And indeed, scientific studies show that <strong>human eyes process visuals 60,000 times faster than text</strong>.</p>
+            <div>
+                <img src="../images/blog/improve_dataviz_1.png" alt="Data Table" style="width:45%; max-width:250px;">
+                <img src="../images/blog/image_deux_dataviz.png" alt="Sales Graph" style="width:55%; max-width:450px; margin-top:10px;">
+            </div>
 
-    <h2>How to Create the Best Data Visualization Dashboards?</h2>
-    <p>Many excellent tools are available for data visualization, with Tableau, Qlik, and PowerBI being among the most popular. Each has its strengths and weaknesses, but regardless of the tool, some principles remain constant for effective data visualization.</p>
+            <p>Which method helps you understand the trend more quickly? The graph likely gives you a more immediate and clear understanding of your sales performance. And indeed, scientific studies show that <strong>human eyes process visuals 60,000 times faster than text</strong>.</p>
 
-    <h3>1. Data model is the key</h3>
-    <p>I cannot talk about data visualization without talking about <strong>data modeling</strong>. After all, how can someone build a house without strong walls? The analogy can seem a little bit cheesy, but it is nonetheless true. And of course, the walls have to be adapted to the house you are building. Consider these three points when developing your data model:</p>
+            <h2>How to Create the Best Data Visualization Dashboards?</h2>
+            <p>Many excellent tools are available for data visualization, with Tableau, Qlik, and PowerBI being among the most popular. Each has its strengths and weaknesses, but regardless of the tool, some principles remain constant for effective data visualization.</p>
 
-    <ul>
-        <li><strong>Granularity:</strong> Is the granularity of your data appropriate for what you want to show?</li>
-        <li><strong>Clarity:</strong> Can you easily explain any number displayed on your dashboard?</li>
-        <li><strong>Performance:</strong> Is the data load manageable for your tool? If not, what can you do to improve it?</li>
-    </ul>
-    <p>If you address these points, you will have a solid foundation for your visualizations.</p>
+            <h3>1. Data model is the key</h3>
+            <p>I cannot talk about data visualization without talking about <strong>data modeling</strong>. After all, how can someone build a house without strong walls? The analogy can seem a little bit cheesy, but it is nonetheless true. And of course, the walls have to be adapted to the house you are building. Consider these three points when developing your data model:</p>
 
-    <h3>2. Keep it simple</h3>
-    <p>How we like to control everything. To have everything we want at the tips of our hand. After all, why not have 30 visualizations with a total of 180 KPIs shown in only one dashboard? But consider this: <strong>overloading a dashboard can slow down its performance and overwhelm the user</strong>. Here's what you can always keep in mind when constructing your dashboards:</p>
+            <ul>
+                <li><strong>Granularity:</strong> Is the granularity of your data appropriate for what you want to show?</li>
+                <li><strong>Clarity:</strong> Can you easily explain any number displayed on your dashboard?</li>
+                <li><strong>Performance:</strong> Is the data load manageable for your tool? If not, what can you do to improve it?</li>
+            </ul>
+            <p>If you address these points, you will have a solid foundation for your visualizations.</p>
 
-    <ul>
-        <li>The more visualizations you add, the slower the dashboard will be. Do you know how frustrating it is to have to wait 5 minutes before your graph shows up? Try to reduce to the minimum the number of visualizations and KPIs by dashboard. One dashboard should address one business problem, with the least KPIs and graphs possible. Furthermore, too much information can cause stakeholders to lose interest.</li>
-        <li>The more calculations (especially complex calculations) made with the tool, again, the slower it will be. This is especially true if you try to mix multiple granularities in the same graphs or sheets. Complex calculations should be handled in the data model, not within the dashboard tool. Document these calculations clearly, and use tooltips to explain how values are derived.</li>
-    </ul>
+            <h3>2. Keep it simple</h3>
+            <p>How we like to control everything. To have everything we want at the tips of our hand. After all, why not have 30 visualizations with a total of 180 KPIs shown in only one dashboard? But consider this: <strong>overloading a dashboard can slow down its performance and overwhelm the user</strong>. Here's what you can always keep in mind when constructing your dashboards:</p>
 
-    <h3>3. Understand the business need</h3>
-    <p>This is perhaps the most important point. A data visualization is not here to (only) play pretty. It should <strong>serve a business need</strong>, making life easier for the end-user, not harder. Without a clear business purpose, a data visualization is pointless. When the business need is not well understood, dashboards can become cluttered with unnecessary visualizations and information. Always start with a clear understanding of the problem you are trying to solve.</p>
+            <ul>
+                <li>The more visualizations you add, the slower the dashboard will be. Do you know how frustrating it is to have to wait 5 minutes before your graph shows up? Try to reduce to the minimum the number of visualizations and KPIs by dashboard. One dashboard should address one business problem, with the least KPIs and graphs possible. Furthermore, too much information can cause stakeholders to lose interest.</li>
+                <li>The more calculations (especially complex calculations) made with the tool, again, the slower it will be. This is especially true if you try to mix multiple granularities in the same graphs or sheets. Complex calculations should be handled in the data model, not within the dashboard tool. Document these calculations clearly, and use tooltips to explain how values are derived.</li>
+            </ul>
 
-    <h2 class="final-thoughts">Final Thoughts</h2>
-    <p>Data visualization is not magic, but when built on a solid foundation with a clear vision, it can significantly enhance the value of your work. Always keep in mind why you are creating dashboards and use them wisely. I hope you enjoyed this article, don't hesitate to contact me if you have further questions!</p>
+            <h3>3. Understand the business need</h3>
+            <p>This is perhaps the most important point. A data visualization is not here to (only) play pretty. It should <strong>serve a business need</strong>, making life easier for the end-user, not harder. Without a clear business purpose, a data visualization is pointless. When the business need is not well understood, dashboards can become cluttered with unnecessary visualizations and information. Always start with a clear understanding of the problem you are trying to solve.</p>
 
-    <div class="footer">
-        <span>Vincent Loucel</span> - July 4 
-        <br><br>
-        <img src="../images/like_icon.png" alt="Like" class="likes"> 
-        <img src="../images/view_icon.png" alt="Views" class="views">
-    </div>
+            <h2 class="final-thoughts">Final Thoughts</h2>
+            <p>Data visualization is not magic, but when built on a solid foundation with a clear vision, it can significantly enhance the value of your work. Always keep in mind why you are creating dashboards and use them wisely. I hope you enjoyed this article, don't hesitate to contact me if you have further questions!</p>
 
-    <div class="related-articles">
-        <h2>Read more from my blog:</h2>
-        <img src="../images/blog_placeholder.png" alt="Another article">
-        <a href="another_article.html">Another article</a>
-    </div>
+            <div class="article-navigation">
+                <div class="previous-post">
+                    <a href="../index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24px" height="24px">
+                            <path d="M32 3.313L3 27.823v33.864h19.813V41.176H41.18v20.51H61V27.823L32 3.313zM24.375 55.052V40.43h15.25v14.622H24.375zm33.25-22.197H48.44V55.052H38.064V40.43H25.94v14.622H15.565V32.855H6.375L32 13.553 57.625 32.855H57.625z"/>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="next-post">
+                    <a href="modern_data_stack.html">
+                        <img src="../images/blog/modern_data_stack.png" alt="Next Article Thumbnail">
+                        <span>The Modern Data Stack</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    <footer>
+        <div class="footer-center">
+            Vincent Loucel
+        </div>
+    </footer>
 </body>
+
 </html>
