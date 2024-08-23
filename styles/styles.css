@@ -21,6 +21,13 @@ header {
 header .logo {
     font-size: 1.2em;
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
 }
 
 header nav ul {
@@ -41,6 +48,20 @@ header nav ul li a {
 
 header nav ul li a:hover {
     border-color: #fff; /* Underline on hover */
+}
+
+/* Language Switcher Button Styling */
+#lang-switcher {
+    background-color: #6fa3b7; /* Softer blue that complements the header */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 16px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Adjust text size */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    margin-left: 10px; /* Space between name and button */
 }
 
 /* Main Content */
@@ -367,7 +388,6 @@ a:hover {
     border-bottom-right-radius: 0;
 }
 
-
 /* Article Page Styles */
 .article-content {
     background-color: #fff; /* White background block */
@@ -425,5 +445,3 @@ a:hover {
     border-radius: 50%;
     margin-right: 10px;
 }
-
-

@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Vincent Loucel</title>
+    <title>Blog - Vincent Loucel</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -22,17 +20,18 @@
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button id="lang-switcher">FR</button>
         </nav>
     </header>
 
     <main class="blog-main">
-        <h1 class="blog-title">All Articles</h1>
+        <h1 class="blog-title" id="blog-title">All Articles</h1>
 
         <article class="blog-post">
             <a href="blog/improve_data_viz.html" class="blog-image-link">
                 <img src="images/blog/improve_data_viz.jpeg" alt="How to improve your Data visualizations">
             </a>
-            <h2>How to improve your Data visualizations</h2>
+            <h2 id="blog-article-1">How to improve your Data visualizations</h2>
             <p class="blog-author">Vincent Loucel - July 4 <em>5 min read</em></p>
             <p class="blog-extract">
                 Discover the best practices for creating effective data visualization dashboards...
@@ -46,7 +45,7 @@
             <a href="blog/modern_data_stack.html" class="blog-image-link">
                 <img src="images/blog/modern_data_stack.png" alt="The Modern Data Stack">
             </a>
-            <h2>The Modern Data Stack</h2>
+            <h2 id="blog-article-2">The Modern Data Stack</h2>
             <p class="blog-author">Vincent Loucel - July 17 <em>6 min read</em></p>
             <p class="blog-extract">
                 Learn how modern data stacks differ from legacy systems and what makes them more flexible and accessible...
@@ -60,6 +59,33 @@
             Vincent Loucel
         </div>
     </footer>
+
+    <script>
+        const translations = {
+            en: {
+                blogTitle: "All Articles",
+                blogArticle1: "How to improve your Data visualizations",
+                blogArticle2: "The Modern Data Stack",
+            },
+            fr: {
+                blogTitle: "Tous les articles",
+                blogArticle1: "Comment améliorer vos visualisations de données",
+                blogArticle2: "La stack de données moderne",
+            }
+        };
+
+        document.getElementById('lang-switcher').addEventListener('click', function () {
+            const currentLang = document.documentElement.lang === 'en' ? 'fr' : 'en';
+            document.documentElement.lang = currentLang;
+
+            const translation = translations[currentLang];
+            document.getElementById('blog-title').textContent = translation.blogTitle;
+            document.getElementById('blog-article-1').textContent = translation.blogArticle1;
+            document.getElementById('blog-article-2').textContent = translation.blogArticle2;
+
+            this.textContent = currentLang === 'en' ? 'FR' : 'EN';
+        });
+    </script>
 </body>
 
 </html>

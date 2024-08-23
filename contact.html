@@ -20,15 +20,16 @@
                 <li><a href="portfolio.html">My Experiences</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
+            <button id="lang-switcher">FR</button>
         </nav>
     </header>
     <main>
         <section class="contact-header">
-            <h1>Contact Me</h1>
-            <p>If you have any questions or would like to get in touch, feel free to contact me through any of the methods below.</p>
+            <h1 id="contact-title">Contact Me</h1>
+            <p id="contact-text">If you have any questions or would like to get in touch, feel free to contact me through any of the methods below.</p>
         </section>
         <section class="contact-info">
-            <h2>Contact Information</h2>
+            <h2 id="contact-info-title">Contact Information</h2>
             <ul>
                 <li><a href="tel:+33642940353"><i class="fas fa-phone"></i> 06 42 94 03 53</a></li>
                 <li><a href="mailto:vincent.loucel.free@gmail.com"><i class="fas fa-envelope"></i> vincent.loucel.free@gmail.com</a></li>
@@ -36,7 +37,7 @@
             </ul>
         </section>
         <section class="contact-form">
-            <h2>Send Me a Message</h2>
+            <h2 id="message-title">Send Me a Message</h2>
             <form action="https://formspree.io/f/xyzgnkbb" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -56,5 +57,35 @@
             Vincent Loucel
         </div>
     </footer>
+
+    <script>
+        const translations = {
+            en: {
+                contactTitle: "Contact Me",
+                contactText: "If you have any questions or would like to get in touch, feel free to contact me through any of the methods below.",
+                contactInfoTitle: "Contact Information",
+                messageTitle: "Send Me a Message",
+            },
+            fr: {
+                contactTitle: "Contactez-moi",
+                contactText: "Si vous avez des questions ou souhaitez me contacter, n'hésitez pas à le faire par l'un des moyens ci-dessous.",
+                contactInfoTitle: "Informations de contact",
+                messageTitle: "Envoyez-moi un message",
+            }
+        };
+
+        document.getElementById('lang-switcher').addEventListener('click', function () {
+            const currentLang = document.documentElement.lang === 'en' ? 'fr' : 'en';
+            document.documentElement.lang = currentLang;
+
+            const translation = translations[currentLang];
+            document.getElementById('contact-title').textContent = translation.contactTitle;
+            document.getElementById('contact-text').textContent = translation.contactText;
+            document.getElementById('contact-info-title').textContent = translation.contactInfoTitle;
+            document.getElementById('message-title').textContent = translation.messageTitle;
+
+            this.textContent = currentLang === 'en' ? 'FR' : 'EN';
+        });
+    </script>
 </body>
 </html>
