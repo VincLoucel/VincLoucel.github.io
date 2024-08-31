@@ -445,3 +445,37 @@ a:hover {
     border-radius: 50%;
     margin-right: 10px;
 }
+
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Distribute images evenly within the container */
+    align-items: center;
+    margin: 20px 0;
+    max-width: 80%; /* Ensure the row does not exceed the container's width */
+    padding: 0 10px; /* Add some padding to keep images within bounds */
+}
+
+.side-by-side-image {
+    max-width: 25%; /* Ensure images are properly sized */
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain; /* Ensure the image scales properly */
+}
+
+.image-with-caption {
+    text-align: center; /* Center the image and caption */
+    margin: 20px 0; /* Add some spacing around the image */
+}
+
+.image-with-caption img {
+    max-width: 70%; /* Set a max width for the image to fit within the content area */
+    height: auto;
+    border-radius: 10px; /* Add a slight rounding to the image corners */
+}
+
+.image-with-caption .caption {
+    font-size: 0.8em; /* Make the caption text smaller */
+    color: #555; /* A slightly lighter color for the caption */
+    margin-top: 5px; /* Space between the image and the caption */
+    font-style: italic; /* Make the caption text italic */
+}
