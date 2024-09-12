@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Service Data: How to Avoid Pitfalls</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Vincent Loucel
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <button id="lang-switcher">FR</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="article-content">
+            <div class="article-header">
+                <h1 id="article-title">Self-Service Data: How to Avoid Pitfalls</h1>
+                <div class="article-author" id="article-author">Vincent Loucel</div>
+                <div class="article-meta" id="article-meta">September 2024 - 7 min read</div>
+            </div>
+
+            <p id="article-intro">The demand for self-service in data has skyrocketed in recent years. After discovering the potential of data utilization, business users increasingly express the need to access data <strong>autonomously, quickly, and simply</strong>.</p>
+
+            <h2 id="section-1-title">What is self-service data?</h2>
+            <p id="section-1-text">Self-service data is the ability for anyone within a company, whether they have a technical background or not, to autonomously access data, query it, transform it, and visualize it themselves. An appealing idea at first glance, but it requires <strong>good practices to avoid certain pitfalls</strong> .</p>
+
+            <h2 id="section-2-title">Solid Data Governance</h2>
+            <p id="section-2-text">The first step for effective self-service is to have solid data governance. In simple terms, data governance is the set of processes governing the treatment, collection, and use of data within an organization. In other words, it’s about answering two key questions:</p>
+            <ul>
+                <li><strong> What</strong> is the data? (having a precise and shared definition of the data across the organization, as well as its lineage).</li>
+                <li><strong>Who can access</strong> this data? (setting appropriate permissions to allow certain groups to access specific data).</li>
+            </ul>
+
+            <p id="section-3-text">Many tools exist to facilitate data governance, but it remains a significant challenge. All data team members, whether Data Engineers, Data Analysts, or BI and Analytics Engineers, must collaborate to <strong> ensure rigorous governance</strong>. The earlier it’s implemented in the company, the better, as the situation can quickly get out of control without it.</p>
+
+            <p id="section-3-title"><strong> Why is it important for self-service?</strong></p>
+            <p id="section-3-text">First, sensitive data should not be accessible to everyone. For example, financial or personal data should be restricted to authorized personnel. Secondly, the idea behind self-service is to provide fast and efficient access to data that the user may not fully understand. To calculate a KPI, it must be simple to trace relevant components across all available data.</p>
+
+            <h2 id="section-4-title">At What Granularity Level Should Data Be Accessible?</h2>
+            <p id="section-4-text">For self-service to be effective, it’s not enough to give everyone access to all data. A business user likely doesn’t need access to raw, uncleaned data or highly granular levels. Overloading users with unnecessary data can cause slowdowns and frustration.</p>
+
+            <p id="section-5-text"><strong>What to do then?</strong> It’s essential to create a layer of pre-processed and pre-modeled data to make it easier for business users to work with. This may include aggregated data or pre-joined tables (dimensions and facts), ready for use. A strong data modeling and preprocessing team is needed to handle this. Typically, this is the role of an Analytics Engineer or BI Engineer.</p>
+
+            <h2 id="section-6-title">Training and Data Culture</h2>
+            <p id="section-6-text">Two essential elements of self-service are:</p>
+            <ul>
+                <li>The tools used.</li>
+                <li>Training not only on those tools but also on best practices for SQL, data visualization, and data culture.</li>
+            </ul>
+
+            <p id="section-7-text">For non-technical users, <strong>having user-friendly tools </strong> like Tableau or PowerBI, which allow for the creation of visualizations via an intuitive interface, is crucial. However, beyond the tools, users must be trained to understand <strong> how to ask the right questions to the data</strong> and <strong>how to interpret the results</strong> they observe. <strong>Misinterpreting data can lead to incorrect decisions.</strong> </p>
+
+            <p id="section-8-text">For example, it’s important to fully grasp the concepts of aggregation and granularity. Most visualization tools aggregate the KPIs they are asked to display. If the granularity of the tables used is not well understood, there’s a risk that the resulting visualizations will be incorrect (e.g., summing values at an incorrect aggregation level leading to inflated numbers), resulting in faulty conclusions.</p>
+
+            <h2 id="section-9-title">Challenges and Risks of Self-Service</h2>
+            <p id="section-9-text">Despite its advantages, self-service data presents significant challenges. First, it’s crucial to limit access to critical or sensitive data, such as financial or personal information. Secondly, a lack of training can lead to misinterpretations of data, inefficient queries, or poorly designed dashboards, ultimately affecting the system’s overall performance.</p>
+
+            <p id="section-10-text">In fact, it’s not uncommon in some companies for business users to create dashboards displaying <strong>the same KPIs but with different figures</strong>. This dissonance between multiple dashboards representing the same data undermines the credibility of the data among users. Often, the issue is simply due to differences in definition and context.</p>
+
+            <h2 id="section-11-title">The Role of AI and Smart Tools</h2>
+            <p id="section-11-text">The arrival of artificial intelligence in the field of self-service data opens new perspectives. Tools like <strong> ThoughtSpot</strong> or even virtual assistants based on ChatGPT allow users to ask questions in natural language and receive answers in the form of visualizations. This further reduces technical barriers and allows non-specialist users to easily access data.</p>
+
+            <h2 id="section-12-title">What is the Value of Self-Service Data?</h2>
+            <p id="section-12-text">The key question is: What value will my self-service data bring? Will it allow for reliable, maintainable, and coherent reporting over the long term? Probably not without proper training. A brief introduction to the basics of data visualization and SQL won’t be enough to produce complex dashboards, such as those needed to monitor a company’s financial health.</p>
+
+            <p id="section-13-text">However, for users who are experts in their field, self-service allows for quick ad hoc analyses, helping them make informed decisions based on both their expertise and the data.</p>
+
+            <h2 id="section-14-title">Conclusion</h2>
+            <p id="section-14-text">Self-service data is becoming more widespread and enables businesses to <strong> make faster, more rational decisions</strong>. With the advent of artificial intelligence, this trend will accelerate further. However, it’s essential to avoid common pitfalls that could create more complexity than value. A solid governance framework, appropriate tools, and training in data culture are the keys to successfully transitioning to self-service data.</p>
+
+            <p>If you have any questions or needs, feel free to contact me :)</p>
+
+            <div class="article-navigation">
+                <div class="previous-post">
+                    <a href="../index.html">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="next-post">
+                    <a href="modern_data_stack.html">
+                        <img src="../images/blog/modern_data_stack.png" alt="Next Article Thumbnail">
+                        <span>The Modern Data Stack</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-center">
+            Vincent Loucel &copy; Copyright 2024
+        </div>
+    </footer>
+
+</body>
+
+</html>
