@@ -27,12 +27,27 @@
     <main class="blog-main">
         <h1 class="blog-title" id="blog-title">All Articles</h1>
 
+        <!-- New Article: Self-Service Data -->
+        <article class="blog-post">
+            <a href="blog/self_service_data.html" class="blog-image-link">
+                <img src="images/blog/Self_service_intro_image.webp" alt="Self-Service Data: How to Avoid Pitfalls">
+            </a>
+            <h2 id="blog-article-3">Self-Service Data: How to Avoid Pitfalls</h2>
+            <p class="blog-author">Vincent Loucel - September 2024 - <em>7 min read</em></p>
+            <p class="blog-extract">
+                Self-service data is becoming more widespread, enabling businesses to make faster, more rational decisions. Learn how to avoid common pitfalls...
+                <a href="blog/self_service_data.html">Read more</a>
+            </p>
+        </article>
+
+        <hr class="blog-divider">
+
         <article class="blog-post">
             <a href="blog/improve_data_viz.html" class="blog-image-link">
                 <img src="images/blog/improve_data_viz.jpeg" alt="How to improve your Data visualizations">
             </a>
-            <h2 id="blog-article-1">How to improve your Data visualizations</h2>
-            <p class="blog-author">Vincent Loucel - July 4 <em>5 min read</em></p>
+            <h2 id="blog-article-1">How to improve your Data Visualizations</h2>
+            <p class="blog-author">Vincent Loucel - July 20 - <em>5 min read</em></p>
             <p class="blog-extract">
                 Discover the best practices for creating effective data visualization dashboards...
                 <a href="blog/improve_data_viz.html">Read more</a>
@@ -46,7 +61,7 @@
                 <img src="images/blog/modern_data_stack.png" alt="The Modern Data Stack">
             </a>
             <h2 id="blog-article-2">The Modern Data Stack</h2>
-            <p class="blog-author">Vincent Loucel - July 17 <em>6 min read</em></p>
+            <p class="blog-author">Vincent Loucel - Aug 25 - <em>6 min read</em></p>
             <p class="blog-extract">
                 Learn how modern data stacks differ from legacy systems and what makes them more flexible and accessible...
                 <a href="blog/modern_data_stack.html">Read more</a>
@@ -67,11 +82,13 @@
                 blogTitle: "All Articles",
                 blogArticle1: "How to improve your Data visualizations",
                 blogArticle2: "The Modern Data Stack",
+                blogArticle3: "Self-Service Data: How to Avoid Pitfalls",
             },
             fr: {
                 blogTitle: "Tous les articles",
                 blogArticle1: "Comment améliorer vos visualisations de données",
                 blogArticle2: "La stack de données moderne",
+                blogArticle3: "Le self-service Data : comment éviter les dérives",
             }
         };
 
@@ -83,6 +100,7 @@
             document.getElementById('blog-title').textContent = translation.blogTitle;
             document.getElementById('blog-article-1').textContent = translation.blogArticle1;
             document.getElementById('blog-article-2').textContent = translation.blogArticle2;
+            document.getElementById('blog-article-3').textContent = translation.blogArticle3;
 
             this.textContent = currentLang === 'en' ? 'FR' : 'EN';
         });
