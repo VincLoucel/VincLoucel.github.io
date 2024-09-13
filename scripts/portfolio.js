@@ -9,3 +9,12 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
         item.classList.toggle('active');
     });
 });
+
+
+function scrollBlog(amount) {
+    const container = document.querySelector('.blog-links');
+    container.scrollBy({
+        left: amount,
+        behavior: 'smooth'
+    });
+}

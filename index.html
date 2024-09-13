@@ -25,6 +25,7 @@
             <button id="lang-switcher">FR</button>
         </nav>
     </header>
+
     <main>
         <section class="hero">
             <h1 id="main-title">Analytics Engineer Expert</h1>
@@ -35,33 +36,45 @@
             <p id="intro-text">
                 With 6 years of experience in the data field and extensive knowledge across various business domains,
                 I can support your Data needs. Whether it’s data ingestion, modeling, or visualization,
-                I can help you leverage your data to maximize business benefits. Working in some of the best Tech Company in France (ManoMano, Doctolib)
-                helped me develop my knowledge of how to make the best usage of the data.
-                With expertise in powerful tools such as DBT, Snowflake, Redshift, and Tableau, I can provide consulting, strengthen your teams, or train them on the fundamentals
-                and best practices for effective and impactful data use.
+                I can help you leverage your data to maximize business benefits.
             </p>
         </section>
+
+        <!-- Updated Blog Section with Horizontal Scroll -->
         <section class="blog">
             <h2><a href="blog.html" id="blog-title">Blog</a></h2>
-            <p id="blog-text">I've shared below some blog articles that could provide some insights and help concerning data issue you could have. Don't hesitate to contact me if you want to know more!</p>
-            <div class="blog-links">
-                <a href="blog/improve_data_viz.html">
-                    <img src="images/blog/improve_data_viz.jpeg" alt="How to improve your Data visualizations">
-                    <h2 id="blog-article-1">How to improve your Data visualizations</h2>
-                    <div class="blog-meta">
-                        <span>July 20</span> <span>5 min read</span>
-                    </div>
-                </a>
-                <a href="blog/modern_data_stack.html">
-                    <img src="images/blog/modern_data_stack.png" alt="The Modern Data Stack">
-                    <h2 id="blog-article-2">The Modern Data Stack</h2>
-                    <div class="blog-meta">
-                        <span>25 Août</span> <span>6 min read</span>
-                    </div>
-                </a>
+            <p id="blog-text">I've shared below some blog articles that could provide some insights and help concerning data issues you could have. Don't hesitate to contact me if you want to know more!</p>
+        
+            <div class="blog-scroll-container">
+                <div class="blog-links">
+                    <a href="blog/self_service_data.html">
+                        <img src="images/blog/Self_service_intro_image.webp" alt="Self-Service Data: How to Avoid Pitfalls">
+                        <h2 id="blog-article-1">Self-Service Data: How to Avoid Pitfalls</h2>
+                        <div class="blog-meta">
+                            <span>September 2024</span> <span>7 min read</span>
+                        </div>
+                    </a>
+                    <a href="blog/modern_data_stack.html">
+                        <img src="images/blog/modern_data_stack.png" alt="The Modern Data Stack">
+                        <h2 id="blog-article-2">The Modern Data Stack</h2>
+                        <div class="blog-meta">
+                            <span>25 Août</span> <span>6 min read</span>
+                        </div>
+                    </a>
+                    <!-- Older articles will be scrollable -->
+                    <a href="blog/improve_data_viz.html">
+                        <img src="images/blog/improve_data_viz.jpeg" alt="How to improve your Data visualizations">
+                        <h2 id="blog-article-3">How to improve your Data visualizations</h2>
+                        <div class="blog-meta">
+                            <span>July 20</span> <span>5 min read</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </section>
+            <!-- Scroll arrows -->
 
+        </section>
+        
         <section class="experiences">
             <h2 id="experience-title">My experiences</h2>
             <div class="portfolio-links">
@@ -71,6 +84,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-center">
             Vincent Loucel &copy; Copyright 2024
@@ -78,46 +92,15 @@
     </footer>
 
     <script>
-        const translations = {
-            en: {
-                mainTitle: "Analytics Engineer Expert",
-                introTitle: "Unleash the power of your data",
-                introText: "With 6 years of experience in the data field and extensive knowledge across various business domains, I can support your Data needs. Whether it’s data ingestion, modeling, or visualization, I can help you leverage your data to maximize business benefits. Working in some of the best Tech Company in France (ManoMano, Doctolib) helped me develop my knowledge of how to make the best usage of the data. With expertise in powerful tools such as DBT, Snowflake, Redshift, and Tableau, I can provide consulting, strengthen your teams, or train them on the fundamentals and best practices for effective and impactful data use.",
-                blogTitle: "Blog",
-                blogText: "I've shared below some blog articles that could provide some insights and help concerning data issue you could have. Don't hesitate to contact me if you want to know more!",
-                blogArticle1: "How to improve your Data visualizations",
-                blogArticle2: "The Modern Data Stack",
-                experienceTitle: "My experiences"
-            },
-            fr: {
-                mainTitle: "Expert en Analytics Engineering",
-                introTitle: "Libérez le pouvoir de vos données",
-                introText: "Avec 6 ans d'expérience dans le domaine de la data et une connaissance approfondie de divers secteurs d'activité, je peux répondre à vos problématique en matière de données. Que ce soit pour l'ingestion, la modélisation ou la visualisation des données, je peux vous aider à en tirer parti au maximum. Travailler dans certaines des meilleures entreprises technologiques en France (ManoMano, Doctolib) m'a permis de développer mes connaissances de l'utilisation optimale des données. Grâce à mon expertise d'outils puissants tels que DBT, Snowflake, Redshift et Tableau, je peux vous offrir des conseils, renforcer vos équipes ou les former sur les fondamentaux et les meilleures pratiques pour une utilisation efficace et impactante des données.",
-                blogTitle: "Blog",
-                blogText: "J'ai partagé ci-dessous quelques articles de blog qui pourraient vous apporter de l'éclairage ou de l'aide concernant des problématiques de données que vous pourriez rencontrer. N'hésitez pas à me contacter si vous souhaitez en savoir plus !",
-                blogArticle1: "Comment améliorer vos Dataviz",
-                blogArticle2: "La Data stack moderne",
-                experienceTitle: "Mes expériences"
-            }
-        };
-
-        document.getElementById('lang-switcher').addEventListener('click', function () {
-            const currentLang = document.documentElement.lang === 'en' ? 'fr' : 'en';
-            document.documentElement.lang = currentLang;
-
-            const translation = translations[currentLang];
-            document.getElementById('main-title').textContent = translation.mainTitle;
-            document.getElementById('intro-title').textContent = translation.introTitle;
-            document.getElementById('intro-text').textContent = translation.introText;
-            document.getElementById('blog-title').textContent = translation.blogTitle;
-            document.getElementById('blog-text').textContent = translation.blogText;
-            document.getElementById('blog-article-1').textContent = translation.blogArticle1;
-            document.getElementById('blog-article-2').textContent = translation.blogArticle2;
-            document.getElementById('experience-title').textContent = translation.experienceTitle;
-
-            this.textContent = currentLang === 'en' ? 'FR' : 'EN';
-        });
+        function scrollBlog(amount) {
+            const container = document.querySelector('.blog-links');
+            container.scrollBy({
+                left: amount,
+                behavior: 'smooth'
+            });
+        }
     </script>
+
 </body>
 
 </html>
