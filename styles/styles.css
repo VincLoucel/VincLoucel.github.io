@@ -462,3 +462,13 @@ a:hover {
     margin-top: 5px; /* Space between the image and the caption */
     font-style: italic; /* Make the caption text italic */
 }
+
+strong {
+    font-weight: bold;
+    color: inherit; /* S'assurer que la couleur correspond bien au contexte */
+}
+
+em {
+    font-style: italic;
+    color: inherit;
+}
